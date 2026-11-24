@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }} | Chinedu Kalu Emmanuel</title>
+<meta name="description" content="{{ page.description }}">
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:description" content="{{ page.description }}">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://chinedukalue.github.io{% if page.image %}{{ page.image }}{% else %}/assets/chinedu.jpg{% endif %}">
+<link rel="canonical" href="https://chinedukalue.github.io{{ page.url }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,800;1,6..72,400;1,6..72,600&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":{{ page.title | jsonify }},"description":{{ page.description | jsonify }},"datePublished":"{{ page.date | date_to_xmlschema }}","author":{"@type":"Person","name":"Chinedu Kalu Emmanuel","url":"https://chinedukalue.github.io"}}
+</script>
+</head>
+<body>
+<div class="page">
+  <div class="strip">
+    <span>Lagos, Nigeria · Remote worldwide</span>
+    <a href="/#letters">Open to senior content roles</a>
+  </div>
+  <header class="mast" style="padding:16px 0 12px">
+    <a href="/" style="text-decoration:none"><h1 style="font-size:clamp(38px,6vw,64px)">The Missing <i>Piece</i></h1></a>
+  </header>
+  <div class="edition">
+    <span>Desk 03 · Articles</span>
+    <span>The portfolio of Chinedu Kalu Emmanuel</span>
+    <span>chinedukalue.github.io</span>
+  </div>
+  <nav class="sections">
+    <a href="/">Front page</a>
+    <a href="/content-marketing.html">Content marketing</a>
+    <a href="/web-design.html">Web design & dev</a>
+    <a href="/articles.html" class="on">Articles</a>
+    <a href="/#archive">Archive</a>
+    <a href="/#letters">Contact</a>
+  </nav>
+
+  <article class="post">
+    {% if page.category %}<p class="kicker">{{ page.category }}</p>{% endif %}
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="standfirst">{{ page.description }}</p>{% endif %}
+    <p class="byline mono">By Chinedu Kalu Emmanuel · {{ page.date | date: "%d %B %Y" }}{% assign words = content | number_of_words %} · {{ words | divided_by: 220 | plus: 1 }} min read</p>
+    <div class="content">
+      {{ content }}
+    </div>
+    {% if page.tags.size > 0 %}<p class="tags">{% for t in page.tags %}<span>{{ t }}</span>{% endfor %}</p>{% endif %}
+    <div class="author">
+      <img src="/assets/chinedu.jpg" alt="Chinedu Kalu Emmanuel">
+      <p><b>Chinedu Kalu Emmanuel</b> is a content marketer, SEO strategist and web builder. He's founding CMO at Startbuddi and co-founder of Techdella Solutions Limited. <a href="/articles.html">More articles &rarr;</a></p>
+    </div>
+  </article>
+
+  <section class="contact" id="letters">
+    <div>
+      <p class="kicker" style="color:#ff8a6e">Letters to the editor</p>
+      <h2>Got a team with <i>a gap in it?</i></h2>
+      <p>I'm open to senior content writing, content marketing, SEO and web roles, remote or hybrid. Tell me what's not working and I'll tell you how I'd fix it.</p>
+    </div>
+    <div>
+      <a class="btn solid" href="mailto:chinedukaluibems@gmail.com">Email · chinedukaluibems@gmail.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/emmanuelkc" target="_blank" rel="noopener">LinkedIn · /in/emmanuelkc</a>
+      <a class="btn" href="https://github.com/chinedukaluE" target="_blank" rel="noopener">GitHub · /chinedukaluE</a>
+    </div>
+  </section>
+  <footer>
+    <span>© 2026 Chinedu Kalu Emmanuel</span>
+    <span>Printed in Lagos · Read everywhere</span>
+  </footer>
+</div>
+</body>
+</html>
