@@ -1,0 +1,17 @@
+title: The Missing Piece
+description: Portfolio and articles of Chinedu Kalu Emmanuel, content marketer, SEO strategist and web builder.
+url: https://chinedukalue.github.io
+author: Chinedu Kalu Emmanuel
+permalink: /articles/:year/:title/
+markdown: kramdown
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+exclude:
+  - README.md
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap

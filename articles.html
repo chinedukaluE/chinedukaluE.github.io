@@ -1,0 +1,91 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Articles | Chinedu Kalu Emmanuel</title>
+<meta name="description" content="Articles by Chinedu Kalu Emmanuel on content marketing, SEO, AI search and growth for startups.">
+<meta property="og:title" content="Articles | Chinedu Kalu Emmanuel">
+<meta property="og:description" content="Articles by Chinedu Kalu Emmanuel on content marketing, SEO, AI search and growth for startups.">
+<meta property="og:image" content="https://chinedukalue.github.io/assets/chinedu.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,800;1,6..72,400;1,6..72,600&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<div class="page">
+  <div class="strip">
+    <span>Lagos, Nigeria · Remote worldwide</span>
+    <a href="/#letters">Open to senior content roles</a>
+  </div>
+  <header class="mast" style="padding:16px 0 12px">
+    <a href="/" style="text-decoration:none"><h1 style="font-size:clamp(38px,6vw,64px)">The Missing <i>Piece</i></h1></a>
+  </header>
+  <div class="edition">
+    <span>Desk 03 · Articles</span>
+    <span>The portfolio of Chinedu Kalu Emmanuel</span>
+    <span>chinedukalue.github.io</span>
+  </div>
+  <nav class="sections">
+    <a href="/">Front page</a>
+    <a href="/content-marketing.html">Content marketing</a>
+    <a href="/web-design.html">Web design & dev</a>
+    <a href="/articles.html" class="on">Articles</a>
+    <a href="/#archive">Archive</a>
+    <a href="/#letters">Contact</a>
+  </nav>
+
+  <section class="shero">
+    <div>
+      <p class="kicker">Desk 03 · Articles</p>
+      <h1>Notes from <i>the desk.</i></h1>
+      <p class="standfirst">What I'm learning about content marketing, SEO, AI search and building for growth, written for marketers and founders who do the work.</p>
+    </div>
+    <aside>
+      <p class="mono" style="margin-bottom:10px">Topics</p>
+      <p>Content strategy · SEO and GEO · Email and lifecycle · Web builds · AI in marketing · Startup growth</p>
+    </aside>
+  </section>
+
+  <div class="sechead"><h2>Latest</h2><span class="mono">Newest first</span></div>
+  <p class="secsub">New articles land here as they're published.</p>
+  <div class="alist">
+  {% if site.posts.size > 0 %}
+    {% for post in site.posts %}
+    <article>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %b %Y" }}</time>
+      <div>
+        {% if post.category %}<p class="kicker">{{ post.category }}</p>{% endif %}
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  {% else %}
+    <div class="empty">The first article is on the way. Check back soon, or follow along on <a href="https://www.linkedin.com/in/emmanuelkc">LinkedIn</a>.</div>
+  {% endif %}
+  </div>
+
+  <section class="contact" id="letters">
+    <div>
+      <p class="kicker" style="color:#ff8a6e">Letters to the editor</p>
+      <h2>Got a team with <i>a gap in it?</i></h2>
+      <p>I'm open to senior content writing, content marketing, SEO and web roles, remote or hybrid. Tell me what's not working and I'll tell you how I'd fix it.</p>
+    </div>
+    <div>
+      <a class="btn solid" href="mailto:chinedukaluibems@gmail.com">Email · chinedukaluibems@gmail.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/emmanuelkc" target="_blank" rel="noopener">LinkedIn · /in/emmanuelkc</a>
+      <a class="btn" href="https://github.com/chinedukaluE" target="_blank" rel="noopener">GitHub · /chinedukaluE</a>
+    </div>
+  </section>
+  <footer>
+    <span>© 2026 Chinedu Kalu Emmanuel</span>
+    <span>Printed in Lagos · Read everywhere</span>
+  </footer>
+</div>
+</body>
+</html>

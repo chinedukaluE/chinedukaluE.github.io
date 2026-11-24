@@ -1,32 +1,27 @@
-# Chinedu Kalu Emmanuel: Content, SEO & Growth Marketing
+# The Missing Piece
 
-Content writer and content marketer with 5+ years on the growth side of startups and agencies. This repo hosts my portfolio site, laid out like a print magazine: case studies as features, roles in the archive, skills in the index.
+Portfolio and articles of **Chinedu Kalu Emmanuel**: content marketer, SEO strategist and web builder.
 
 **Live site:** https://chinedukalue.github.io
 
-## Highlights
+| Page | What's on it |
+| --- | --- |
+| [Front page](https://chinedukalue.github.io) | Career story, case studies, full experience archive, skills |
+| [Content marketing](https://chinedukalue.github.io/content-marketing.html) | Method, services and content results |
+| [Web design & development](https://chinedukalue.github.io/web-design.html) | WordPress, Framer and e-commerce builds |
+| [Articles](https://chinedukalue.github.io/articles.html) | Writing on content, SEO, AI search and growth |
 
-- **Conductor.ng:** 3,000+ app downloads in 3 months from a Google, Meta and TikTok launch; 150% social growth
-- **Lykluk:** 700%+ waitlist growth before launch
-- **Johan Consults:** 60% more inbound leads, 25% more search traffic
-- **Wezops:** 100+ SEO articles, 45% social growth, 25% ROI lift
-- **PayCape:** 300+ articles, domain authority 33, 926+ backlinks, 65% revenue growth over 24 months
-- **Another Level Band:** 300% distribution growth over 4 years, 90% higher streaming earnings
-- **Wordapp:** 300+ WordPress sites in 6 languages
+Built with hand-written HTML and CSS. Articles run on Jekyll through GitHub Pages.
 
-## What I do
+## Publishing a new article
 
-SEO and AI search (GEO/AEO) · Content strategy and writing · Go-to-market and paid media · Lifecycle email and automation · WordPress (PHP themes), HTML, Framer · AI agents and prompt workflows
+1. Open the `_posts` folder on GitHub (or create it: **Add file → Create new file**, then type `_posts/` before the file name).
+2. Name the file `YYYY-MM-DD-short-title.md`, for example `2026-12-01-why-content-stalls.md`.
+3. Copy the contents of `_drafts/article-template.md`, fill in the title, description, category and tags, and write the article in Markdown.
+4. Click **Commit changes**. The article appears on the Articles page and gets its own page within a couple of minutes.
 
-**Tools:** GoHighLevel, HubSpot, Startbuddi, WordPress, Framer, Canva, CapCut, Claude Code
+To add images, upload them to the `assets` folder and link them as `/assets/your-image.jpg`.
 
 ## Contact
 
 chinedukaluibems@gmail.com · [LinkedIn](https://www.linkedin.com/in/emmanuelkc)
-
-## Publish this site
-
-1. Create a public repo named `chinedukaluE.github.io`.
-2. Upload `index.html` and this `README.md`.
-3. Go to **Settings → Pages**, set the source to the `main` branch, root folder, and save.
-4. The site goes live at `https://chinedukalue.github.io` within a few minutes.
