@@ -24,4 +24,4 @@ To add images, upload them to the `assets` folder and link them as `/assets/your
 
 ## Contact
 
-chinedukaluibems@gmail.com · [LinkedIn](https://www.linkedin.com/in/emmanuelkc)
+d.chinedukalu@gmail.com · [LinkedIn](https://www.linkedin.com/in/emmanuelkc)
